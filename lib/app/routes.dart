@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/welcome_screen.dart';
 import '../screens/login_screen.dart';
+import '../screens/home_screen.dart';
 
 class Routes {
   static const String welcome = '/';
@@ -14,6 +15,8 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const WelcomeScreen());
       case login:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case home:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return MaterialPageRoute(
           builder:
