@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpleloginapp/app/app_theme.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
@@ -23,7 +24,7 @@ class CustomButton extends StatelessWidget {
         ),
         onPressed: onPressed,
         //TO-DO create AppTheme class
-        child: Text(text),
+        child: Text(text, style: AppTheme.buttonTextStyle),
       ),
     );
   }
